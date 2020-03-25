@@ -9,8 +9,8 @@
     /* float: left; */
     display: inline-block;
     vertical-align: top;
-    width: 45px;
-    height: 47px;
+    width: 55px;
+    height: 57px;
     margin-right: 20px;
     margin-top: 30px;
     /* border: 1px solid red; */
@@ -88,8 +88,9 @@
         color: lightcoral;
     }
     .logo {
-        width: 10%;
-        height: 20%;
+        width: 55px;
+        height: 57px;
+        margin-left: 50%;
     }
 }
 
