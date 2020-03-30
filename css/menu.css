@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap');
 .header {
     height: 100px;
     padding: 0 20px;
@@ -30,6 +31,8 @@
     text-decoration: none;
     padding: 0 10px;
     transition: 0.4s;
+    font-family: 'Raleway', sans-serif;
+    font-size: 19px;
 }
 
 .show-menu-btn, .hide-menu-btn {
