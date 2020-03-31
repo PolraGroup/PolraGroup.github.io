@@ -50,6 +50,10 @@
     color: #A435A8;
 }
 
+.menu li a.active {
+    color: #3bab36;
+}
+
 #checkbox {
     position: absolute;
     visibility: hidden;
