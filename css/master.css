@@ -213,10 +213,10 @@ h1 {
     grid-auto-rows: minmax(100px, auto);
 }
 
-.person-img {
+#person-img {
     height: 200px;
     width: 200px;
-    margin-left: 95px;
+    margin-left: 25%;
     border-radius: 50%;
     margin-bottom: 25px;
 }
@@ -324,6 +324,12 @@ a .fas:hover {
 
 a #active {
     color: #3bab36;
+}
+
+.footer-p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-style: italic;
 }
 
 /* RESOURCES */
