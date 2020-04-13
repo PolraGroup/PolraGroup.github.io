@@ -1,31 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Inter&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-* {
-    font-family: 'Inter', sans-serif;
-}
-
-h1 {
-    font-family: 'Raleway', sans-serif;
-}
-
-.xs-header {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 300;
-    font-size: 24px;
-    line-height: 28px;
-}
-
-.xxs-header {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 24px;
-}
-
-.link {
-    text-decoration: none;
-    color: #A435A8;
-}
 
 /* HOME */
 
@@ -53,17 +27,9 @@ h1 {
     top: 30%;
     left: 30%;
     color: #FEFEFE;
+    text-align: center;
 }
 
-.title .title-h1 {
-    font-size: 100px;
-    margin-bottom: -30px;
-}
-
-.title .title-p {
-    padding-left: 5%;
-    font-size: 24px;
-}
 
 /* /grid */
 
@@ -81,11 +47,6 @@ h1 {
     grid-column: 1;
     grid-row: 1;
     /* border: solid blue 1px; */
-}
-
-.one h1 {
-    font-size: 40px;
-    line-height: 56px;
 }
 
 .one p {
