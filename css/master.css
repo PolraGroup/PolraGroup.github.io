@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Inter&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
+* {
+    margin: 0;
+}
 /* HOME */
 
 /* /title */
@@ -18,18 +21,19 @@
 
 .title .title-img img {
     margin-top: -36px;
-    width: 100% !important;
-    height: 100% !important;
+    padding-top: 8.75%;
+    padding-left: 31%;
+    width: 65% !important;
+    height: 80% !important;
 }
 
 .title .title-txt {
     position: absolute;
-    top: 30%;
-    left: 30%;
-    color: #FEFEFE;
+    top: 18%;
+    left: 5%;
+    color: #121212;
     text-align: center;
 }
-
 
 /* /grid */
 
