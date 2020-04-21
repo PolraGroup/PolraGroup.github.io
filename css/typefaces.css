@@ -177,10 +177,10 @@
 }
 
 /* body */
+
 .body-l {
     font-size: 18px;
     line-height: 36px;
-    font-weight: 100;
 }
 
 .body-m {
@@ -198,8 +198,36 @@
     line-height: 18px;
 }
 
+/* body justify */
+
+.body-l-j {
+    font-size: 18px;
+    line-height: 36px;
+    text-align: justify;
+}
+
+.body-m-j {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: justify;
+}
+
+.body-s-j {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: justify;
+}
+
+.body-xs-j {
+    font-size: 12px;
+    line-height: 18px;
+    text-align: justify;
+}
+
 /* paragraph */
+
 /* paragraph ID */
+
 #sub-title-m {
     margin-top: -45px;
     font-size: 24px;
