@@ -1,4 +1,4 @@
-var caribbean = {
+var Caribbean = {
 "type": "FeatureCollection",
 "name": "Caribbean",
 "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },

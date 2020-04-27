@@ -27,5 +27,57 @@ window.addEventListener('load', (event) => {
         "Wereldkaart": Stamen_TerrainBackground
     };
 
-    L.control.layers(baseMaps).addTo(map);
+    // Layers
+    var asia = L.geoJson(Asia, {
+        style: function (feature) {
+            return {
+                color: '#A435A8',
+                weight: 1,
+                opacity: 1,
+                fillOpacity: 1
+            }
+        }
+    }).addTo(map).bindPopup("<h2>Azië");
+
+    var brazil = L.geoJson(Brazil, {
+        style: function (feature) {
+            return {
+                color: '#8D3A8E',
+                weight: 1,
+                opacity: 1,
+                fillOpacity: 1
+            }        
+        }
+    }).addTo(map).bindPopup("<h2>Brazilië");
+
+    var caribbean = L.geoJson(Caribbean, {
+        style: function (feature) {
+            return {
+                color: '#862F88',
+                weight: 1,
+                opacity: 1,
+                fillOpacity: 1
+            }
+        }
+    }).addTo(map).bindPopup("<h2>Caribbean");
+
+    var eastafrica = L.geoJson(eastAfrica, {
+        style: function (feature) {
+            return {
+                color: '#79277B',
+                weight: 1,
+                opacity: 1,
+                fillOpacity: 1
+            }
+        }
+    }).addTo(map).bindPopup("<h2>Oost Afrika");
+
+    var overlayLayers = {
+        "Azië": asia,
+        "Brazilië": brazil, 
+        "Caribbean": caribbean,
+        "Oost-Afrika": eastafrica
+    }
+
+    L.control.layers(baseMaps,overlayLayers).addTo(map);
 });
