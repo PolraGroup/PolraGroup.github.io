@@ -37,9 +37,9 @@ window.addEventListener('load', (event) => {
                 fillOpacity: 1
             }
         }
-    }).addTo(map).bindPopup("<h2>Azië");
+    }).addTo(map).bindPopup("<h2>Azië"),
 
-    var brazil = L.geoJson(Brazil, {
+        brazil = L.geoJson(Brazil, {
         style: function (feature) {
             return {
                 color: '#8D3A8E',
@@ -48,9 +48,9 @@ window.addEventListener('load', (event) => {
                 fillOpacity: 1
             }        
         }
-    }).addTo(map).bindPopup("<h2>Brazilië");
+    }).addTo(map).bindPopup("<h2>Brazilië"),
 
-    var caribbean = L.geoJson(Caribbean, {
+        caribbean = L.geoJson(Caribbean, {
         style: function (feature) {
             return {
                 color: '#862F88',
@@ -59,9 +59,9 @@ window.addEventListener('load', (event) => {
                 fillOpacity: 1
             }
         }
-    }).addTo(map).bindPopup("<h2>Caribbean");
+    }).addTo(map).bindPopup("<h2>Caribbean"),
 
-    var eastafrica = L.geoJson(eastAfrica, {
+        eastafrica = L.geoJson(eastAfrica, {
         style: function (feature) {
             return {
                 color: '#79277B',
@@ -72,12 +72,11 @@ window.addEventListener('load', (event) => {
         }
     }).addTo(map).bindPopup("<h2>Oost Afrika");
 
+    var sopropoAreas = L.layerGroup([asia, brazil, caribbean, eastafrica]);
+
     var overlayLayers = {
-        "Azië": asia,
-        "Brazilië": brazil, 
-        "Caribbean": caribbean,
-        "Oost-Afrika": eastafrica
-    }
+        "Groeigebieden" : sopropoAreas
+    };
 
     L.control.layers(baseMaps,overlayLayers).addTo(map);
 });
