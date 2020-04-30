@@ -15,7 +15,7 @@ window.addEventListener('load', (event) => {
 
     var map = L.map('sopropo', {
         center: [20, 0],
-        zoom: 1.5,
+        zoom: 2,
         layers: [mapboxSatellite]
     });
 
@@ -59,7 +59,7 @@ window.addEventListener('load', (event) => {
                 fillOpacity: 1
             }
         }
-    }).addTo(map).bindPopup("<h2>Caribbean"),
+    }).addTo(map).bindPopup("<h2>Caraïben"),
 
         eastafrica = L.geoJson(eastAfrica, {
         style: function (feature) {
@@ -72,11 +72,25 @@ window.addEventListener('load', (event) => {
         }
     }).addTo(map).bindPopup("<h2>Oost Afrika");
 
-    var sopropoAreas = L.layerGroup([asia, brazil, caribbean, eastafrica]);
+    var sopropoAreas = L.layerGroup([asia, brazil, caribbean, eastafrica]).addTo(map);
 
     var overlayLayers = {
         "Groeigebieden" : sopropoAreas
     };
 
     L.control.layers(baseMaps,overlayLayers).addTo(map);
+
+    var legend = L.control({ position: "bottomright" });
+
+    legend.onAdd = function (map) {
+        var div = L.DomUtil.create("div", "legenda");
+        div.innerHTML += "<h4>Legenda</h4>";
+        div.innerHTML += '<i style="background: #A435A8"></i><span>Azië</span><br>';
+        div.innerHTML += '<i style="background: #8D3A8E"></i><span>Brazilië</span><br>';
+        div.innerHTML += '<i style="background: #862F88"></i><span>Caraïben</span><br>';
+        div.innerHTML += '<i style="background: #79277B"></i><span>Oost-Afrika</span><br>';
+        return div;
+    };
+
+    legend.addTo(map);
 });
