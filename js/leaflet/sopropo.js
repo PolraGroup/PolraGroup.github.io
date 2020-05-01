@@ -31,7 +31,7 @@ window.addEventListener('load', (event) => {
     var asia = L.geoJson(Asia, {
         style: function (feature) {
             return {
-                color: '#A435A8',
+                color: '#286E2F',
                 weight: 1,
                 opacity: 1,
                 fillOpacity: 1
@@ -39,56 +39,56 @@ window.addEventListener('load', (event) => {
         }
     }).addTo(map).bindPopup("<h2>Azië"),
 
+        eastafrica = L.geoJson(eastAfrica, {
+            style: function (feature) {
+                return {
+                    color: '#44933F',
+                    weight: 1,
+                    opacity: 1,
+                    fillOpacity: 1
+                }
+            }
+        }).addTo(map).bindPopup("<h2>Oost Afrika"),
+
         brazil = L.geoJson(Brazil, {
-        style: function (feature) {
-            return {
-                color: '#8D3A8E',
-                weight: 1,
-                opacity: 1,
-                fillOpacity: 1
-            }        
-        }
-    }).addTo(map).bindPopup("<h2>Brazilië"),
+            style: function (feature) {
+                return {
+                    color: '#79277B',
+                    weight: 1,
+                    opacity: 1,
+                    fillOpacity: 1
+                }
+            }
+        }).addTo(map).bindPopup("<h2>Brazilië"),
 
         caribbean = L.geoJson(Caribbean, {
-        style: function (feature) {
-            return {
-                color: '#862F88',
-                weight: 1,
-                opacity: 1,
-                fillOpacity: 1
+            style: function (feature) {
+                return {
+                    color: '#A45CA1',
+                    weight: 1,
+                    opacity: 1,
+                    fillOpacity: 1
+                }
             }
-        }
-    }).addTo(map).bindPopup("<h2>Caraïben"),
-
-        eastafrica = L.geoJson(eastAfrica, {
-        style: function (feature) {
-            return {
-                color: '#79277B',
-                weight: 1,
-                opacity: 1,
-                fillOpacity: 1
-            }
-        }
-    }).addTo(map).bindPopup("<h2>Oost Afrika");
+        }).addTo(map).bindPopup("<h2>Caraïben");
 
     var sopropoAreas = L.layerGroup([asia, brazil, caribbean, eastafrica]).addTo(map);
 
     var overlayLayers = {
-        "Groeigebieden" : sopropoAreas
+        "Groeigebieden": sopropoAreas
     };
 
-    L.control.layers(baseMaps,overlayLayers).addTo(map);
+    L.control.layers(baseMaps, overlayLayers).addTo(map);
 
     var legend = L.control({ position: "bottomright" });
 
     legend.onAdd = function (map) {
         var div = L.DomUtil.create("div", "legenda");
-        div.innerHTML += "<h4>Legenda</h4>";
-        div.innerHTML += '<i style="background: #A435A8"></i><span>Azië</span><br>';
-        div.innerHTML += '<i style="background: #8D3A8E"></i><span>Brazilië</span><br>';
-        div.innerHTML += '<i style="background: #862F88"></i><span>Caraïben</span><br>';
-        div.innerHTML += '<i style="background: #79277B"></i><span>Oost-Afrika</span><br>';
+        div.innerHTML += "<h3>Legenda</h3>";
+        div.innerHTML += '<i style="background: #286E2F"></i><span>Azië</span><br>';
+        div.innerHTML += '<i style="background: #44933F"></i><span>Oost-Afrika</span><br>';
+        div.innerHTML += '<i style="background: #79277B"></i><span>Brazilië</span><br>';
+        div.innerHTML += '<i style="background: #A45CA1"></i><span>Caraïben</span><br>';
         return div;
     };
 
