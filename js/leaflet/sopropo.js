@@ -37,7 +37,7 @@ window.addEventListener('load', (event) => {
                 fillOpacity: 1
             }
         }
-    }).addTo(map).bindPopup("<h2>Azië"),
+    }).addTo(map).bindPopup("<h2>Zuidoost-Azië"),
 
         eastafrica = L.geoJson(eastAfrica, {
             style: function (feature) {
@@ -70,9 +70,20 @@ window.addEventListener('load', (event) => {
                     fillOpacity: 1
                 }
             }
-        }).addTo(map).bindPopup("<h2>Caraïben");
+        }).addTo(map).bindPopup("<h2>Caraïben"),
+        surinam = L.geoJson(Surinam, {
+            style: function (feature) {
+                return {
+                    color: '#757373',
+                    weight: 1,
+                    opacity: 1,
+                    fillOpacity: 1
+                }
+            }
+        }).addTo(map).bindPopup("<h2>Caraïben")
+        ;
 
-    var sopropoAreas = L.layerGroup([asia, brazil, caribbean, eastafrica]).addTo(map);
+    var sopropoAreas = L.layerGroup([asia, brazil, caribbean, eastafrica, surinam]).addTo(map);
 
     var overlayLayers = {
         "Groeigebieden": sopropoAreas
@@ -80,15 +91,16 @@ window.addEventListener('load', (event) => {
 
     L.control.layers(baseMaps, overlayLayers).addTo(map);
 
-    var legend = L.control({ position: "bottomright" });
+    var legend = L.control({ position: "bottomleft" });
 
     legend.onAdd = function (map) {
         var div = L.DomUtil.create("div", "legenda");
         div.innerHTML += "<h3>Legenda</h3>";
-        div.innerHTML += '<i style="background: #286E2F"></i><span>Azië</span><br>';
+        div.innerHTML += '<i style="background: #286E2F"></i><span>Zuidoost-Azië</span><br>';
         div.innerHTML += '<i style="background: #44933F"></i><span>Oost-Afrika</span><br>';
         div.innerHTML += '<i style="background: #79277B"></i><span>Brazilië</span><br>';
         div.innerHTML += '<i style="background: #A45CA1"></i><span>Caraïben</span><br>';
+        div.innerHTML += '<i style="background: #757373"></i><span>Suriname</span><br>';
         return div;
     };
 
