@@ -12,11 +12,22 @@
     <link rel="stylesheet" href="css/master.css">
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/typefaces.css">
+    <link rel="stylesheet" href="css/javascript.css">
 
+    <!-- javascript -->
     <script src="https://kit.fontawesome.com/ea176faa6e.js" crossorigin="anonymous"></script>
-    <script src="js/lazysizes.min.js" async=""></script>
+    <!-- <script src="js/lazysizes.min.js" async=""></script> -->
 
-    <title>Wetgeving omtrent voedingsclaims</title>
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+        integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+        crossorigin=""></script>
+    <script src="js/leaflet/sopropo.js"></script>
+
+    <title>Onze vlog</title>
 </head>
 
 <body>
@@ -29,9 +40,9 @@
 
         <ul class="menu">
             <li><a href="index.html">home</a></li>
-            <li><a href="aboutbittergourd.html">bitter gourd</a></li>
+            <li><a class="active" href="#">bitter gourd</a></li>
             <li><a href="rapport.html">rapport</a></li>
-            <li><a class="active" href="#">wetgeving</a></li>
+            <li><a href="law.html">wetgeving</a></li>
             <li><a href="products.html">producten</a></li>
             <li><a href="about.html">over ons</a></li>
 
@@ -41,38 +52,12 @@
         </ul>
     </div>
 
+    <article class="article-top">
+        <div id="sopropo"></div>
+    </article>
     <div class="content">
         <article class="article-top">
             <h1 class="m-header">Sectie</h1>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, amet at. Consequuntur dolore nulla
-                facilis illum eius. Tempora ex nisi officia velit ipsum quam? Numquam iure minus quasi cupiditate
-                corporis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum quis veniam enim. Blanditiis,
-                voluptates inventore esse, vero, repudiandae consequatur amet excepturi dolorem a beatae laudantium
-                molestias earum placeat impedit dicta.
-            </p>
-            <br>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, amet at. Consequuntur dolore nulla
-                facilis illum eius. Tempora ex nisi officia velit ipsum quam? Numquam iure minus quasi cupiditate
-                corporis!
-            </p>
-            <br>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, amet at. Consequuntur dolore nulla
-                facilis illum eius. Tempora ex nisi officia velit ipsum quam? Numquam iure minus quasi cupiditate
-                corporis!
-            </p>
-            <br>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, amet at. Consequuntur dolore nulla
-                facilis illum eius. Tempora ex nisi officia velit ipsum quam? Numquam iure minus quasi cupiditate
-                corporis!
-            </p>
-        </article>
-        <img src="https://i0.wp.com/cdn-prod.medicalnewstoday.com/content/images/articles/317/317724/bitter-melons-on-a-wooden-table.jpg?w=1155&h=1541"
-            alt="">
-        <article>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, amet at. Consequuntur dolore nulla
                 facilis illum eius. Tempora ex nisi officia velit ipsum quam? Numquam iure minus quasi cupiditate
@@ -109,7 +94,8 @@
         <div class="footer-txt">
             <p class="footer-p">
                 PolraGroup staat voor het eerlijk en duurzaam, maar ook voor gezond en een gezonde levensstijl.
-                PolraGroup bestaat sinds 2020 en is een initiatief dat is ontstaan uit de samenwerking tussen twee studies van
+                PolraGroup bestaat sinds 2020 en is een initiatief dat is ontstaan uit de samenwerking tussen twee
+                studies van
                 Aeres Hogeschool Almere.
             </p>
         </div>
@@ -122,6 +108,11 @@
             </p>
         </div>
     </footer>
+    <script src="js/geojson/asia.js" async></script>
+    <script src="js/geojson/brazil.js" async></script>
+    <script src="js/geojson/caribbean.js" async></script>
+    <script src="js/geojson/eastafrica.js" async></script>
+    <script src="js/geojson/surinam.js" async></script>
 </body>
 
 </html>
