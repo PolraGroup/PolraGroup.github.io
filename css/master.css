@@ -118,10 +118,19 @@
         margin: 7.5%;
     }
 
+    .one {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
     .two {
         grid-column: 1;
-        grid-row: 3;
+        grid-row: 1;
         /* border: solid green 1px; */
+    }
+
+    .three {
+        grid-row: 3;
     }
 
     .two h1 {
