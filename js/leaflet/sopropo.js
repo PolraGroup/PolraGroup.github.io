@@ -1,37 +1,39 @@
 window.addEventListener('load', (event) => {
     // basemaps
     var Stamen_TerrainBackground = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/terrain-background/{z}/{x}/{y}{r}.{ext}', {
-        attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-        subdomains: 'abcd',
-        minZoom: 0,
-        maxZoom: 18,
+        minZoom: 2,
+        maxZoom: 2,
         ext: 'png'
     }),
         mapboxSatellite = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
-            maxZoom: 18,
+            minZoom: 2,
+            maxZoom: 3,
             id: 'mapbox/satellite-v9',
             accessToken: 'pk.eyJ1Ijoiam9yYW52ZHVpbiIsImEiOiJjam53d2k5a3EwZzdhM3FucTByaDRrMzQwIn0.sCAmQZysagzU2t82TJiRkw'
         });
 
     var map = L.map('sopropo', {
-        center: [20, 0],
+        // center: [20, 0],
+        center: [-2, 0],
         zoom: 2,
-        layers: [mapboxSatellite]
+        layers: [Stamen_TerrainBackground]
     });
 
     map.touchZoom.disable();
     map.scrollWheelZoom.disable();
+    map.removeControl(map.zoomControl);
+    map.dragging.disable();
 
     var baseMaps = {
+        "Wereldkaart": Stamen_TerrainBackground,
         "Satelliet": mapboxSatellite,
-        "Wereldkaart": Stamen_TerrainBackground
     };
 
     // Layers
     var asia = L.geoJson(Asia, {
         style: function (feature) {
             return {
-                color: '#286E2F',
+                color: '#E86252',
                 weight: 1,
                 opacity: 1,
                 fillOpacity: 1
@@ -42,7 +44,7 @@ window.addEventListener('load', (event) => {
         eastafrica = L.geoJson(eastAfrica, {
             style: function (feature) {
                 return {
-                    color: '#44933F',
+                    color: '#E86252',
                     weight: 1,
                     opacity: 1,
                     fillOpacity: 1
@@ -53,7 +55,7 @@ window.addEventListener('load', (event) => {
         brazil = L.geoJson(Brazil, {
             style: function (feature) {
                 return {
-                    color: '#79277B',
+                    color: '#E86252',
                     weight: 1,
                     opacity: 1,
                     fillOpacity: 1
@@ -64,7 +66,7 @@ window.addEventListener('load', (event) => {
         caribbean = L.geoJson(Caribbean, {
             style: function (feature) {
                 return {
-                    color: '#A45CA1',
+                    color: '#E86252',
                     weight: 1,
                     opacity: 1,
                     fillOpacity: 1
@@ -74,7 +76,7 @@ window.addEventListener('load', (event) => {
         surinam = L.geoJson(Surinam, {
             style: function (feature) {
                 return {
-                    color: '#757373',
+                    color: '#E86252',
                     weight: 1,
                     opacity: 1,
                     fillOpacity: 1
@@ -91,18 +93,18 @@ window.addEventListener('load', (event) => {
 
     L.control.layers(baseMaps, overlayLayers).addTo(map);
 
-    var legend = L.control({ position: "bottomleft" });
+    // var legend = L.control({ position: "bottomleft" });
 
-    legend.onAdd = function (map) {
-        var div = L.DomUtil.create("div", "legenda");
-        div.innerHTML += "<h3>Legenda</h3>";
-        div.innerHTML += '<i style="background: #286E2F"></i><span>Zuidoost-Azië</span><br>';
-        div.innerHTML += '<i style="background: #44933F"></i><span>Oost-Afrika</span><br>';
-        div.innerHTML += '<i style="background: #79277B"></i><span>Brazilië</span><br>';
-        div.innerHTML += '<i style="background: #A45CA1"></i><span>Caraïben</span><br>';
-        div.innerHTML += '<i style="background: #757373"></i><span>Suriname</span><br>';
-        return div;
-    };
+    // legend.onAdd = function (map) {
+    //     var div = L.DomUtil.create("div", "legenda");
+    //     div.innerHTML += "<h3>Legenda</h3>";
+    //     div.innerHTML += '<i style="background: #EEABC4"></i><span>Zuidoost-Azië</span><br>';
+    //     div.innerHTML += '<i style="background: #DA9AB1"></i><span>Oost-Afrika</span><br>';
+    //     div.innerHTML += '<i style="background: #79277B"></i><span>Brazilië</span><br>';
+    //     div.innerHTML += '<i style="background: #A45CA1"></i><span>Caraïben</span><br>';
+    //     div.innerHTML += '<i style="background: #757373"></i><span>Suriname</span><br>';
+    //     return div;
+    // };
 
-    legend.addTo(map);
+    // legend.addTo(map);
 });
