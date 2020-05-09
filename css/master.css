@@ -175,8 +175,8 @@ article {
 }
 
 .product img {
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: auto;
 }
 
 .invc-block {
@@ -188,7 +188,7 @@ article {
     background-color: #bad79a;
 }
 
-#product2 {
+#product2, #product3, #product4, #product5, #product6, #product7, #product8, #product9, #product10 {
     margin-top: 50px;
     background-color: #d7ced8;
 }
@@ -202,7 +202,7 @@ article {
 }
 
 .product-img-right {
-    background-color: blue;
+    /* background-color: blue; */
     width: 450px;
     height: 450px;
     margin-left: 60%;
@@ -218,7 +218,7 @@ article {
 }
 
 .product-img-left {
-    background-color: blue;
+    /* background-color: blue; */
     width: 450px;
     height: 450px;
     margin-left: 15%;
