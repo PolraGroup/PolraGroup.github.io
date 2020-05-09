@@ -19,7 +19,6 @@ window.addEventListener('load', (event) => {
         layers: [Stamen_TerrainBackground]
     });
 
-    map.touchZoom.disable();
     map.scrollWheelZoom.disable();
     map.removeControl(map.zoomControl);
     map.dragging.disable();
