@@ -4,6 +4,11 @@
     margin: 0;
 }
 
+.disclaimer {
+    margin: 5%;
+    border: solid black 1px;
+}
+
 /* HOME */
 
 /* /title */
@@ -155,36 +160,118 @@ article {
     height: 100%;
 }
 
-/* VLOG */
+/* LAW */
 
-.video-left {
+/* PRODUCTS */
+
+.product-intro {
+    margin: 2.5% 12.5%;
+}
+
+.product {
+    height: 500px;
     width: 100%;
-    height: 750px;
+    margin: 2.5% 0%;
 }
 
-.video-left-video {
-    width: 50%;
-    margin-left: 25%;
+.product img {
+    width: 100%;
+    height: 100%;
 }
 
-.video-left-video iframe {
+.invc-block {
+    height: 150px;
+    width: 100%;
+}
+
+#product1 {
+    background-color: #bad79a;
+}
+
+#product2 {
+    margin-top: 50px;
+    background-color: #d7ced8;
+}
+
+.product-txt-left {
+    /* background-color: red; */
+    width: 40%;
+    height: 50%;
+    margin-left: 15%;
+    padding-top: 10%;
+}
+
+.product-img-right {
+    background-color: blue;
+    width: 450px;
     height: 450px;
-    width: 100%;
+    margin-left: 60%;
+    position: absolute;
+    margin-top: -7.5%;
 }
 
-.video-left-txt {
-    margin-left: 25%;
-    margin-top: 1%;
-    height: 200px;
-    text-align: justify;
-    width: 50%;
+.product-txt-right {
+    width: 40%;
+    height: 50%;
+    margin-left: 55%;
+    padding-top: 10%;
 }
 
-.video-left-tags {
-    margin-top: 2%;
-    height: 10%;
-    font-size: 12px;
-    font-weight: 700;
+.product-img-left {
+    background-color: blue;
+    width: 450px;
+    height: 450px;
+    margin-left: 15%;
+    position: absolute;
+    margin-top: -7.5%;
+}
+
+@media screen and (min-width: 320px) and (max-width: 640px) {
+    .product-intro {
+        margin: 10%;
+    }
+    .product {
+        height: 500px;
+        /* margin: 2.5% 0%; */
+    }
+    .product img {
+        width: 100%;
+        height: 100%;
+    }
+    .invc-block {
+        height: 150px;
+        width: 100%;
+    }
+    .product-txt-left {
+        width: 95%;
+        height: 75%;
+        margin: 0;
+        padding-left: 2.5%;
+        padding-top: 40%;
+        text-align: justify;
+    }
+    .product-img-right {
+        width: 250px;
+        height: 250px;
+        margin-left: 12.5%;
+        position: absolute;
+        margin-top: -45%;
+    }
+    .product-txt-right {
+        width: 95%;
+        height: 75%;
+        margin: 0;
+        padding-left: 2.5%;
+        padding-top: 40%;
+        text-align: justify;
+    }
+    .product-img-left {
+        width: 250px;
+        height: 250px;
+        margin-left: 12.5%;
+        position: absolute;
+        margin-top: -45%;
+    }
 }
 
 /* ABOUT */
