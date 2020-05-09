@@ -175,8 +175,8 @@ article {
 }
 
 .product img {
-    width: auto;
-    height: auto;
+    width: 450px;
+    height: 450px;
 }
 
 .invc-block {
@@ -188,9 +188,41 @@ article {
     background-color: #bad79a;
 }
 
-#product2, #product3, #product4, #product5, #product6, #product7, #product8, #product9, #product10 {
+#product2, #product9, #product10 {
     margin-top: 50px;
     background-color: #d7ced8;
+}
+
+#product3 {
+    background-color: #5d7c52;
+}
+
+#product4 {
+    background-color: #caadde;
+}
+
+#product5 {
+    background-color: #c9d99e;
+}
+
+#product6 {
+    background-color: #ac8daf;
+}
+
+#product7 {
+    background-color: #acc6aa;
+}
+
+#product8 {
+    background-color: #d5a4cf;
+}
+
+#product9 {
+    background-color: #bfd8d5;
+}
+
+#product10 {
+    background-color: #9873b9;
 }
 
 .product-txt-left {
@@ -201,6 +233,13 @@ article {
     padding-top: 10%;
 }
 
+.product-txt-right {
+    width: 40%;
+    height: 50%;
+    margin-left: 55%;
+    padding-top: 10%;
+}
+
 .product-img-right {
     /* background-color: blue; */
     width: 450px;
@@ -208,13 +247,6 @@ article {
     margin-left: 60%;
     position: absolute;
     margin-top: -7.5%;
-}
-
-.product-txt-right {
-    width: 40%;
-    height: 50%;
-    margin-left: 55%;
-    padding-top: 10%;
 }
 
 .product-img-left {
