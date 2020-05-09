@@ -16,9 +16,11 @@ window.addEventListener('load', (event) => {
         // center: [20, 0],
         center: [-2, 0],
         zoom: 2,
-        layers: [Stamen_TerrainBackground]
+        layers: [Stamen_TerrainBackground],
+        dragging: !L.Browser.mobile
     });
 
+    map.tou
     map.scrollWheelZoom.disable();
     map.removeControl(map.zoomControl);
     map.dragging.disable();
