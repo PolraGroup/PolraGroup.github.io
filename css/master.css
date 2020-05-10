@@ -139,7 +139,7 @@
     }
 }
 
-/* Rapport */
+/* RAPPORT */
 
 .content {
     margin: 5% 12.5%;
@@ -161,6 +161,44 @@ article {
 }
 
 /* LAW */
+
+.law-content-intro {
+    margin: 5% 12.5%;
+    text-align: justify;
+}
+
+.law-content-body {
+    height: 600px;
+}
+
+#law-one {
+    background-color: #dddddd;
+}
+
+.law-content-txtl {
+    width: 40%;
+    float: left;
+    padding: 7.5%;
+}
+
+.law-content-imgr {
+    width: 40%;
+    float: right;
+    padding: 7.5% 2.5% 2.5% 2.5%;
+}
+
+.law-content-imgr img {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (min-width: 320px) and (max-width: 640px) {
+    .law-content-intro {
+        padding-top: 10%;
+        margin: 5%;
+        text-align: justify;
+    }
+}
 
 /* PRODUCTS */
 
@@ -185,43 +223,52 @@ article {
 }
 
 #product1 {
+    margin-top: 50px;
     background-color: #bad79a;
 }
 
-#product2, #product9, #product10 {
+#product2 {
     margin-top: 50px;
     background-color: #d7ced8;
 }
 
 #product3 {
+    margin-top: 50px;
     background-color: #5d7c52;
 }
 
 #product4 {
+    margin-top: 50px;
     background-color: #caadde;
 }
 
 #product5 {
+    margin-top: 50px;
     background-color: #c9d99e;
 }
 
 #product6 {
+    margin-top: 50px;
     background-color: #ac8daf;
 }
 
 #product7 {
+    margin-top: 50px;
     background-color: #acc6aa;
 }
 
 #product8 {
+    margin-top: 50px;
     background-color: #d5a4cf;
 }
 
 #product9 {
+    margin-top: 50px;
     background-color: #bfd8d5;
 }
 
 #product10 {
+    margin-top: 50px;
     background-color: #9873b9;
 }
 
@@ -263,7 +310,7 @@ article {
         margin: 10%;
     }
     .product {
-        height: 500px;
+        height: 400px;
         /* margin: 2.5% 0%; */
     }
     .product img {
@@ -271,7 +318,7 @@ article {
         height: 100%;
     }
     .invc-block {
-        height: 150px;
+        height: 200px;
         width: 100%;
     }
     .product-txt-left {
