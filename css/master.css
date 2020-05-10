@@ -139,26 +139,42 @@
     }
 }
 
-/* RAPPORT */
+/* ABOUT SOPROPO */
 
-.content {
-    margin: 5% 12.5%;
+.leaflet-sopropo{
+    margin: 5%;
+}
+
+.content{
+    margin: 0% 20%;
     text-align: justify;
 }
 
-article {
-    /* border: solid 1px red; */
-    margin-top: 15%;
+#about-melon{
+    display: none;
 }
 
-.article-top {
-    margin-top: -5%;
-}
+@media screen and (min-width: 320px) and (max-width: 640px) {
+    #about-melon{
+        display: block;
+        height: 100px;
+    }
 
-.content img {
-    width: 100%;
-    height: 100%;
+    .content{
+        margin: 0% 5%;
+    }
+
+    .leaflet-sopropo{
+        margin: 0% 0% 10% 0%;
+    }
+
+    #about-melon2{
+        height: 50px;
+    }
 }
+/* RAPPORT */
+
+
 
 /* LAW */
 
@@ -168,7 +184,7 @@ article {
 }
 
 .law-content-body {
-    height: 600px;
+    height: 620px;
 }
 
 #law-one {
@@ -230,11 +246,12 @@ article {
 #product2 {
     margin-top: 50px;
     background-color: #d7ced8;
+    text-align: left;
 }
 
 #product3 {
     margin-top: 50px;
-    background-color: #5d7c52;
+    background-color: #97c9b5;
 }
 
 #product4 {
@@ -313,6 +330,14 @@ article {
         height: 400px;
         /* margin: 2.5% 0%; */
     }
+
+    #product8{
+        height: 450px;
+    }
+
+    .m-header{
+        text-align: left;
+    }
     .product img {
         width: 100%;
         height: 100%;
@@ -365,7 +390,11 @@ article {
     margin-top: 1%;
     text-align: justify;
 }
-
+.background-grid{
+    background-color: #e9dee4;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
 .about-grid {
     margin: 75px;
     display: grid;
@@ -373,6 +402,7 @@ article {
     column-gap: 60px;
     row-gap: 20px;
     grid-auto-rows: minmax(100px, auto);
+
 }
 
 #person-img {
