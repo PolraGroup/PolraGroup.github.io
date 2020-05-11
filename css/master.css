@@ -219,13 +219,13 @@
 /* PRODUCTS */
 
 .product-intro {
-    margin: 2.5% 12.5%;
+    margin: 5% 12.5%;
 }
 
 .product {
     height: 500px;
     width: 100%;
-    margin: 2.5% 0%;
+    margin: 5% 0%;
 }
 
 .product img {
@@ -381,19 +381,9 @@
 /* ABOUT */
 
 .about-content {
-    margin: 2.5% 10%;
-}
-
-.about-txt {
-    column-count: 3;
-    column-gap: 2.5%;
-    margin-top: 1%;
-    text-align: justify;
-}
-
-.about-content-proto{
     margin: 2.5% 20%;
 }
+
 .background-grid{
     background-color: #e9dee4;
     padding-top: 1px;
