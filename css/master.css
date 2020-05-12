@@ -72,6 +72,10 @@
 
 /* /grid */
 
+#hp-block {
+    height: 50px;
+}
+
 .hp-grid {
     margin: 50px;
     display: grid;
@@ -116,6 +120,9 @@
 }
 
 @media screen and (min-width: 320px) and (max-width: 640px) {
+    #hp-block {
+        display: none;
+    }
     .hp-grid {
         display: grid;
         grid-template-columns: 1fr;
@@ -277,6 +284,10 @@
 #product8 {
     margin-top: 50px;
     background-color: #d5a4cf;
+}
+
+#product8-txt {
+    padding-top: 5%;
 }
 
 #product9 {
