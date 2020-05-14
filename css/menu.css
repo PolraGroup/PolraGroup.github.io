@@ -13,7 +13,7 @@
     width: 55px;
     height: 57px;
     margin-right: 20px;
-    margin-top: 30px;
+    margin-top: 4vh;
     /* border: 1px solid red; */
 }
 
@@ -58,6 +58,10 @@
     position: absolute;
     visibility: hidden;
     z-index: -1111;
+}
+
+#home {
+    display: none;
 }
 
 @media screen and (min-width: 320px) and (max-width: 640px){ 
@@ -110,7 +114,9 @@
     .menu li a.active {
         color: black;
     }
-
+    #home {
+        display: block;
+    }
     .header{
         height: 50px;
     }

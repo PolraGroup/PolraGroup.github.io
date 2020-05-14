@@ -1,0 +1,62 @@
+.new-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 60px;
+    row-gap: 20px;
+    grid-auto-rows: minmax(100px, auto);
+    /* border: solid 1px red; */
+}
+
+.one-one {
+    /* border: solid 1px blue; */
+    height: 90vh;
+    grid-row: 1 / 4;
+    grid-column: 1 / 3;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    background-image: url(https://images.squarespace-cdn.com/content/v1/588a9d4b9f7456789fbca780/1490055555282-UAEKC6B0H6AVGIZCZW28/ke17ZwdGBToddI8pDm48kBeMze4I1AIWEK9AlXgaOSV7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0iCDJfub3m665p7PHnGGFOcqH2CCW29TtrpVUi5wpUo6F6b_xxEjfFNKg3vbijHmoA/Bitter_Melon?format=1500w);
+    background-color: #fbfbfb;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: center center;
+}
+
+.one-one img {
+    width: 100%;
+    height: 100%;
+}
+
+.one-one h1 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+}
+
+.one-one h2 {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+}
+
+.two-two {
+    padding: 5%;
+    /* border: solid 1px orange; */
+    grid-row: 4;
+    grid-column: 1;
+    text-align: center;
+}
+
+.three-three {
+    padding: 5%;
+    /* border: solid 1px green; */
+    grid-row: 4;
+    grid-column: 2;
+    text-align: center;
+}
