@@ -12,11 +12,10 @@
     <link rel="stylesheet" href="css/master.css">
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/typefaces.css">
-    <link rel="stylesheet" href="css/homepage.css">
 
     <script src="https://kit.fontawesome.com/ea176faa6e.js" crossorigin="anonymous"></script>
 
-    <title>Alternatieve homepage</title>
+    <title>PolraGroup</title>
     <meta name="description" content="">
 </head>
 
@@ -42,14 +41,20 @@
         </ul>
     </div>
 
-    <div class="new-grid">
-        <div class="one-one">
-            <h1 class="xxl-header-c" id="xxxl">PolraGroup</h1>
-            <!-- <img src="https://www.apple.com/v/home/h/images/heroes/iphone-se/hero__dvsxv8smkkgi_large_2x.jpg" alt=""> -->
-            <!-- <img src="https://www.apple.com/v/home/h/images/heroes/iphone-11-spring/hero__dvsxv8smkkgi_large_2x.jpg" alt=""> -->
-            <!-- <img src="https://images.squarespace-cdn.com/content/v1/588a9d4b9f7456789fbca780/1490055555282-UAEKC6B0H6AVGIZCZW28/ke17ZwdGBToddI8pDm48kBeMze4I1AIWEK9AlXgaOSV7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0iCDJfub3m665p7PHnGGFOcqH2CCW29TtrpVUi5wpUo6F6b_xxEjfFNKg3vbijHmoA/Bitter_Melon?format=1500w" alt=""> -->
+    <div class="title">
+        <div class="title-img">
+            <img class="hero-img" src="https://selfhacked.com/app/uploads/2017/04/AdobeStock_92568079-min.jpeg" alt="">
         </div>
-        <div class="two-two">
+        <div class="title-txt">
+            <h1 class="xxl-header-c" id="xxxl">PolraGroup</h1>
+            <div class="block"></div>
+        </div>
+    </div>
+
+    <div class="incv-block" id="hp-block"></div>
+
+    <div class="hp-grid">
+        <div class="one">
             <h1 class="m-header">Bitter gourd en diabetes</h1>
             <p class="body-m-j">
                 De groente waarmee PolraGroup zich bezig houdt is nog niet zeer bekend in Nederland, maar hij lijkt veel
@@ -69,11 +74,13 @@
             </p>
             <br>
             <p>
-                <a class="button-bg" href="aboutbittergourd.html#aanleiding">Lees
+                <!-- <a class="button-bg" href="aboutbittergourd.html#aanleiding">Lees
+                    verder >></a> -->
+                <a class="button-bg" href="homepage.html">Lees
                     verder >></a>
             </p>
         </div>
-        <div class="three-three">
+        <div class="two">
             <h1 class="m-header">Gezondheidclaims</h1>
             <p class="body-m-j">
                 In opdracht van dé bitter gourd organisatie Green Health Solution (GHS), zijn wij, PolraGroup, aan de
@@ -84,11 +91,13 @@
                 marktintroductie is een samenwerking gestart met de Aeres Hogeschool Almere, hieruit is PolraGroup
                 ontstaan. Wij zijn ons voor Green Health Solutions gaan verdiepen in gezondheidsclaims met als doel
                 een (stappenplan voor een) claim voor de bitter gourd te ontwikkelen.
-                GHS benoemen en gezondheidclaims
+                <!-- GHS benoemen en gezondheidclaims -->
             </p>
             <br>
             <p>
-                <a class="button-bg" href="rapport.html">Lees verder >></a>
+                <!-- <a class="button-bg" href="rapport.html">Lees verder >></a> -->
+                <a class="button-bg" href="homepage.html">Lees
+                    verder >></a>
             </p>
         </div>
     </div>
@@ -115,15 +124,5 @@
         </div>
     </footer>
 </body>
-<script> 
 
-    var nystories = document.querySelector("p").offsetTop;
-    window.onscroll = function() {
-      if (window.pageYOffset > 0) {
-     var opac = (window.pageYOffset / nystories);
-        console.log(opac);
-      document.body.style.background = "linear-gradient(rgba(255, 255, 255, " + opac + "), rgba(255, 255, 255, " + opac + ")), url(https://images.squarespace-cdn.com/content/v1/588a9d4b9f7456789fbca780/1490055555282-UAEKC6B0H6AVGIZCZW28/ke17ZwdGBToddI8pDm48kBeMze4I1AIWEK9AlXgaOSV7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0iCDJfub3m665p7PHnGGFOcqH2CCW29TtrpVUi5wpUo6F6b_xxEjfFNKg3vbijHmoA/Bitter_Melon?format=1500w) no-repeat";
-      }
-    };
-    </script>
 </html>
