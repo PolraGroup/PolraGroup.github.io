@@ -114,7 +114,7 @@
         background-position: center center;
         background-size: contain;
         background-image: url(/img/sopropo-hp-resize.jpg);
-        overflow: scroll;
+        background-attachment: unset;
     }
     .one-one h1 {
         position: absolute;
