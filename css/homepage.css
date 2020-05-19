@@ -34,7 +34,6 @@
 
 .two-two {
     padding: 5%;
-    /* border: solid 1px orange; */
     grid-row: 4;
     grid-column: 1;
     text-align: center;
@@ -42,7 +41,6 @@
 
 .three-three {
     padding: 5%;
-    /* border: solid 1px green; */
     grid-row: 4;
     grid-column: 2;
     text-align: center;
@@ -126,13 +124,11 @@
     }
     .two-two {
         padding: 5%;
-        /* border: solid 1px orange; */
         grid-row: 2;
         grid-column: 1;
         text-align: center;
     }
     .three-three {
-        /* border: solid 1px green; */
         grid-row: 3;
         grid-column: 1;
     }
