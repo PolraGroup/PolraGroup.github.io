@@ -256,7 +256,22 @@ td, th {
         margin-bottom: 5%;
     }
     #block-np-1 {
-        height: 550px;
+        height: 150vh;
+    }
+    #block-np-2 {
+        height: 130vh;
+    }
+    #block-np-3 {
+        height: 90vh;
+    }
+    #table {
+        margin: 5%;
+    }
+    table {
+        width: 90%;
+    }
+    #null {
+        width: 100%;
     }
 }
 
@@ -291,7 +306,7 @@ td, th {
 
 @media screen and (min-width: 320px) and (max-width: 640px) {
     #block-lt-1 {
-        height: 680px;
+        height: 100vh;
     }
     .block-content-rp {
         width: 100%;
@@ -337,7 +352,7 @@ td, th {
 
 @media screen and (min-width: 320px) and (max-width: 640px) {
     #block-rt-1 {
-        height: 680px;
+        height: 160vh;
     }
     .block-content-lp {
         width: 100%;
@@ -386,6 +401,23 @@ td, th {
 .law-content-imgr img {
     width: 100%;
     height: 100%;
+}
+
+.law-content-txtr {
+    width: 40%;
+    float: right;
+    padding: 7.5%;
+}
+
+.law-content-imgl {
+    width: 40%;
+    float: left;
+    padding: 7.5% 2.5% 2.5% 2.5%;
+}
+
+#block-law-np1 {
+    background-color: #9873b9;
+    height: 75vh;
 }
 
 @media screen and (min-width: 320px) and (max-width: 640px) {

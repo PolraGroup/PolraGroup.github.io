@@ -58,6 +58,10 @@
         font-size: 32px;
         line-height: 72px;
     }
+    .l-header{
+        font-size: 32px;
+        line-height: 56px;
+    }
     .m-header {
         font-size: 32px;
         line-height: 44px;
@@ -267,6 +271,14 @@
     margin-bottom: -3%;
 }
 
+@media screen and (min-width: 320px) and (max-width: 640px) {
+    #table-des {
+        margin: 5%;
+    }
+    #table-des-m {
+        margin: 0;
+    }
+}
 /* Links */
 
 .link {
