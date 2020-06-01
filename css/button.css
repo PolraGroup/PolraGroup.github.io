@@ -1,0 +1,81 @@
+.buttonwrapper {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 80px;
+    border: none;
+    background: #d1eaa3;
+    /* font-family: "Julius Sans One", sans-serif; */
+    font-size: 15pt;
+    color: #121212;
+    cursor: pointer;
+    transition: 0.5s;
+    overflow: hidden;
+    border-radius: 5px;
+    outline: none;
+}
+
+.button:after {
+    content: "";
+    z-index: 1;
+    position: absolute;
+    height: 85px;
+    width: 0px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background: #b590ca;
+    transition: 0.1s linear;
+}
+
+.button:before {
+    content: url("https://cdn0.iconfinder.com/data/icons/typicons-2/24/tick-24.png");
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    transition: all 0.4s 0.4s;
+}
+
+.button:hover {
+    box-shadow: 2px 2px 20px #181818;
+}
+
+.button.clicked {
+    width: 800px;
+    color: #121212;
+}
+
+.clicked:after {
+    width: 100%;
+    transition: 4s 0.8s linear;
+}
+
+.button.complete {
+    width: 85px;
+}
+
+.button.complete:before {
+    display: initial;
+}
+
+@media screen and (min-width: 320px) and (max-width: 640px) {
+    .buttonwrapper {
+        top: 100%;
+    }
+    .button.clicked {
+        width: 90vw;
+        color: #121212;
+    }
+}
