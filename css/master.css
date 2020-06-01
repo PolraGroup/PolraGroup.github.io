@@ -417,7 +417,17 @@ td, th {
 
 #block-law-np1 {
     background-color: #9873b9;
-    height: 75vh;
+    height: 80vh;
+}
+
+#block-law-np2{
+    background-color: #d7ced8;
+    height: 50vh; 
+}
+
+#block-law-np3 {
+    background-color: #c0d8d5;
+    height: 45vh;
 }
 
 @media screen and (min-width: 320px) and (max-width: 640px) {
