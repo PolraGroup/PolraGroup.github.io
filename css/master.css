@@ -438,7 +438,7 @@ td, th {
 
 #block-law-np4 {
     background-color: #c0d8d5;
-    height: 120vh;
+    height: 80vh;
 }
 
 #block-law-np5 {
@@ -453,7 +453,7 @@ td, th {
 
 #block-law-np7 {
     background-color: #c0d8d5;
-    height: 70vh;
+    height: 50vh;
 }
 
 @media screen and (min-width: 320px) and (max-width: 640px) {
