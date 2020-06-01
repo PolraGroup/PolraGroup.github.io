@@ -6,6 +6,8 @@
 
 html {
     scroll-behavior: smooth;
+    width: 100%;
+    height: 100%;
 }
 
 .disclaimer {
@@ -421,25 +423,45 @@ td, th {
 
 #block-law-np1 {
     background-color: #9873b9;
-    height: 83vh;
+    height: 120vh;
 }
 
-#block-law-np2{
+#block-law-np2 {
     background-color: #d7ced8;
-    height: 50vh; 
+    height: 70vh;
 }
 
 #block-law-np3 {
     background-color: #c0d8d5;
-    height: 45vh;
+    height: 70vh;
+}
+
+#block-law-np4 {
+    background-color: #c0d8d5;
+    height: 120vh;
+}
+
+#block-law-np5 {
+    background-color: #c0d8d5;
+    height: 40vh;
+}
+
+#block-law-np6 {
+    background-color: #c0d8d5;
+    height: 70vh;
+}
+
+#block-law-np7 {
+    background-color: #c0d8d5;
+    height: 70vh;
 }
 
 @media screen and (min-width: 320px) and (max-width: 640px) {
     #law-one {
-        height: 170vh;
+        height: 135vh;
     }
-    #law-two{
-        height: 180vh;
+    #law-two {
+        height: 142vh;
     }
     .law-content-intro {
         padding-top: 10%;
@@ -450,33 +472,41 @@ td, th {
         height: 100px;
     }
     .law-content-txtl {
-        width: 95%;
-        padding: 2.5%;
+        width: 90%;
+        padding: 5%;
     }
     .law-content-imgr {
         width: 95%;
         padding: 10% 2.5% 10% 2.5%;
     }
     .law-content-txtr {
-        width: 95%;
-        padding: 2.5%;
+        width: 90%;
+        padding: 5%;
     }
     .law-content-imgl {
         width: 95%;
         padding: 10% 2.5% 10% 2.5%;
     }
     #block-law-np1 {
-        height: 240vh;
+        height: 190vh;
     }
-    
-    #block-law-np2{
-  
-        height: 50vh; 
+    #block-law-np2 {
+        height: 50vh;
     }
-    
     #block-law-np3 {
-        
         height: 45vh;
+    }
+    #block-law-np4 {
+        height: 140vh;
+    }
+    #block-law-np5 {
+        height: 25vh;
+    }
+    #block-law-np6 {
+        height: 100vh;
+    }
+    #block-law-np7 {
+        height: 85vh;
     }
 }
 
