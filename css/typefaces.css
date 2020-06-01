@@ -262,6 +262,11 @@
     line-height: 28px;
 }
 
+#table-des {
+    margin-top: 1%;
+    margin-bottom: -3%;
+}
+
 /* Links */
 
 .link {
