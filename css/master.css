@@ -386,6 +386,10 @@ td, th {
     background-color: #dddddd;
 }
 
+#law-two {
+    background-color: #dddddd;
+}
+
 .law-content-txtl {
     width: 40%;
     float: left;
@@ -417,7 +421,7 @@ td, th {
 
 #block-law-np1 {
     background-color: #9873b9;
-    height: 80vh;
+    height: 83vh;
 }
 
 #block-law-np2{
@@ -432,7 +436,10 @@ td, th {
 
 @media screen and (min-width: 320px) and (max-width: 640px) {
     #law-one {
-        height: 1100px;
+        height: 170vh;
+    }
+    #law-two{
+        height: 180vh;
     }
     .law-content-intro {
         padding-top: 10%;
@@ -449,6 +456,27 @@ td, th {
     .law-content-imgr {
         width: 95%;
         padding: 10% 2.5% 10% 2.5%;
+    }
+    .law-content-txtr {
+        width: 95%;
+        padding: 2.5%;
+    }
+    .law-content-imgl {
+        width: 95%;
+        padding: 10% 2.5% 10% 2.5%;
+    }
+    #block-law-np1 {
+        height: 240vh;
+    }
+    
+    #block-law-np2{
+  
+        height: 50vh; 
+    }
+    
+    #block-law-np3 {
+        
+        height: 45vh;
     }
 }
 
