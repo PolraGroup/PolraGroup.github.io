@@ -1,0 +1,111 @@
+.content-law-rapport {
+    width: 100%;
+}
+
+.content-law-rapport-txt {
+    padding: 7.5% 15%;
+}
+
+/* Block color (ID) */
+
+#newrapport-1 {
+    height: 500px;
+    background-color: #bbd69d;
+}
+
+#newrapport-2 {
+    height: 530px;
+    background-color: #d7ced8;
+}
+
+#newrapport-3 {
+    height: 700px;
+    background-color: #98c9b5;
+}
+
+#newrapport-4 {
+    height: 430px;
+    background-color: #c9aedd;
+}
+
+#newlaw-1 {
+    height: 400px;
+    background-color: #bbd69d;
+}
+
+#newlaw-2 {
+    height: 350px;
+    background-color: #d7ced8;
+}
+
+#newlaw-3 {
+    height: 700px;
+    background-color: #98c9b5;
+}
+
+#newlaw-4 {
+    height: 670px;
+    background-color: #c9aedd;
+}
+
+#newlaw-5 {
+    height: 670px;
+    background-color: #c9d8a1;
+}
+
+#newlaw-6 {
+    height: 450px;
+    background-color: #ab8eae;
+}
+
+#newlaw-7 {
+    height: 450px;
+    background-color: #adc5ab;
+}
+
+#newlaw-invc {
+    display: none;
+}
+
+@media screen and (min-width: 320px) and (max-width: 640px) {
+    .content-law-rapport-txt {
+        padding: 10% 5%;
+    }
+    #newrapport-1 {
+        height: 930px;
+    }
+    #newrapport-2 {
+        height: 900px;
+    }
+    #newrapport-3 {
+        height: 100px;
+    }
+    #newrapport-4 {
+        height: 630px;
+    }
+    #newlaw-1 {
+        height: 575px;
+    }
+    #newlaw-2 {
+        height: 480px;
+    }
+    #newlaw-3 {
+        height: 1550px;
+    }
+    #newlaw-4 {
+        height: 1150px;
+    }
+    #newlaw-5 {
+        height: 380px;
+    }
+    #newlaw-6 {
+        height: 880px;
+    }
+    #newlaw-invc {
+        display: block;
+        height: 50px;
+    }
+    #newrapport-gone {
+        height: 30px;
+    }
+}
