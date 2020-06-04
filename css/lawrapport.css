@@ -29,12 +29,14 @@
 }
 
 #newlaw-1 {
-    height: 570px;
+    /* height: 570px; */
+    height: 350px;
     background-color: #bbd69d;
 }
 
 #newlaw-2 {
-    height: 550px;
+    /* height: 550px; */
+    height: 350px;
     background-color: #d7ced8;
 }
 
@@ -91,10 +93,12 @@
         height: 630px;
     }
     #newlaw-1 {
-        height: 1050px;
+        /* height: 1050px; */
+        height: 550px;
     }
     #newlaw-2 {
-        height: 1120px;
+        /* height: 1120px; */
+        height: 500px;
     }
     #newlaw-3 {
         height: 1550px;
