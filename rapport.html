@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/typefaces.css">
     <link rel="stylesheet" href="css/button.css">
     <link rel="stylesheet" href="css/lawrapport.css">
+    <link rel="stylesheet" href="css/imgsizing.css">
 
     <script src="https://kit.fontawesome.com/ea176faa6e.js" crossorigin="anonymous"></script>
     <script src="js/lazysizes.min.js" async=""></script>
@@ -69,8 +70,7 @@
         <div class="content-law-rapport-txt">
             <h1 class="m-header">Aanvraag gezondheidsclaims 2010</h1>
             <p class="body-m-j">
-                In 2010 werd een gezondheidsclaim ingediend bij de European Food Safety (EFSA) voor bitter gourd
-                (<em>Momordica charantia</em>).
+                In 2010 werd een gezondheidsclaim ingediend bij de European Food Safety (EFSA) voor bitter gourd.
             </p>
             <p class="body-m-j">
             <h1 class="body-xs" id="table-des-m"><em>De ingediende claim voor het ingrediënt Momordica charantia bij
@@ -95,7 +95,6 @@
                 gezondheidsclaim niet
                 toegestaan is, omdat dit niet is geautoriseerd door de EFSA op grond van artikel 13 3(1) in de
                 Claimsverordening.
-
             </p>
         </div>
     </div>
@@ -127,8 +126,7 @@
             <table id="null">
                 <tr>
                     <td>Claim (ID 4586):</td>
-                    <td><em>‘Behoud van een normaal glucose metabolisme door charantine, anthocyanosiden, beta en
-                            alfa
+                    <td><em>‘Behoud van een normaal glucose metabolisme door charantine, anthocyanosiden, beta en alfa
                             carotenen, bestanddelen die
                             in deze plantencombinatie aanwezig zijn’.</em></td>
                 </tr>
@@ -141,7 +139,14 @@
 
     <div class="content-law-rapport" id="newrapport-3">
         <div class="content-law-rapport-txt">
-            <h1 class="m-header">Foto</h1>
+            <p class="body-m-j">
+                <img class="lazyload" id="poster" data-src="img/posters/soortenclaims.jpg" alt="">
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01">
+                <div id="caption"></div>
+            </div>
+            </p>
         </div>
     </div>
 
@@ -173,11 +178,9 @@
         </div>
         <div class="footer-txt">
             <p class="footer-p">
-                Polra Group staat voor het eerlijk en duurzaam, maar ook voor gezond en een gezonde levensstijl.
-                Polra Group bestaat sinds 2020 en is een initiatief die is ontstaan uit de samenwerking tussen
-                twee
-                studies van
-                Aeres Hogeschool Almere.
+                Polra Group staat voor een eerlijk en duurzaam, maar ook een gezonde levensstijl. Polra Group bestaat
+                sinds 2020 en is
+                een initiatief die is ontstaan uit de samenwerking tussen twee opleidingen van Aeres Hogeschool Almere.
             </p>
         </div>
         <div class="footer-logo">
@@ -192,6 +195,21 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="js/button.js"></script>
+    <script>
+        var modal = document.getElementById("myModal");
+        var img = document.getElementById("poster");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function () {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+        var span = document.getElementsByClassName("close")[0];
+        span.onclick = function () {
+            modal.style.display = "none";
+        } 
+    </script>
 </body>
 
 </html>
