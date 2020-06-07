@@ -8,13 +8,29 @@
 
 /* Block color (ID) */
 
+#newrapport-sum {
+    height: 730px;
+    background-color: #f1c6de;
+}
+
+#newlaw-sum {
+    height: 730px;
+    background-color: #f1c6de;
+}
+
+#newrapport-sum #infographic ,#newlaw-sum #infographic {
+    width: 450px;
+    height: 450px;
+    margin-left: 25%;
+}
+
 #newrapport-1 {
     height: 500px;
     background-color: #bbd69d;
 }
 
 #newrapport-2 {
-    height: 530px;
+    height: 1380px;
     background-color: #d7ced8;
 }
 
@@ -29,14 +45,14 @@
 }
 
 #newlaw-1 {
-    /* height: 570px; */
-    height: 350px;
+    height: 600px;
+    /* height: 350px; */
     background-color: #bbd69d;
 }
 
 #newlaw-2 {
-    /* height: 550px; */
-    height: 350px;
+    height: 550px;
+    /* height: 350px; */
     background-color: #d7ced8;
 }
 
@@ -51,7 +67,7 @@
 }
 
 #newlaw-5 {
-    height: 860px;
+    height: 900px;
     background-color: #c9d8a1;
 }
 
@@ -69,11 +85,15 @@
     display: none;
 }
 
-#poster {
+#infographic, #poster {
     height: 600px;
     width: 250px;
     margin-top: 50px;
     margin-left: 35%;
+}
+
+.read {
+    margin-left: 3%;
 }
 
 @media screen and (min-width: 320px) and (max-width: 640px) {
@@ -84,7 +104,7 @@
         height: 930px;
     }
     #newrapport-2 {
-        height: 900px;
+        height: 2330px;
     }
     #newrapport-3 {
         height: 400px;
@@ -93,12 +113,10 @@
         height: 630px;
     }
     #newlaw-1 {
-        /* height: 1050px; */
-        height: 550px;
+        height: 1050px;
     }
     #newlaw-2 {
-        /* height: 1120px; */
-        height: 500px;
+        height: 1120px;
     }
     #newlaw-3 {
         height: 1550px;
@@ -107,7 +125,7 @@
         height: 1150px;
     }
     #newlaw-5 {
-        height: 600px;
+        height: 2380px;
     }
     #newlaw-6 {
         height: 880px;
@@ -122,10 +140,15 @@
     #newrapport-gone {
         height: 30px;
     }
-    #poster {
-        height: 350px;
-        width: 150px;
-        margin-top: 00px;
-        margin-left: 25%;
+    #newrapport-sum #infographic, #newlaw-sum #infographic {
+        width: 300px;
+        height: 300px;
+        margin-left: 0%;
+    }
+    #newlaw-sum .content-law-rapport-txt {
+        padding: 10% 2.5%;
+    }
+    #newlaw-sum {
+        height: 460px;
     }
 }
